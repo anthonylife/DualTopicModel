@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	makefile	/^CC=g++$/;"	m
+CFLAGS	makefile	/^CFLAGS=-c -Wall -g -O3$/;"	m
+CalculateResultParas	lda.cpp	/^bool LDA::CalculateResultParas()$/;"	f	class:LDA
+EXECUTABLE	makefile	/^EXECUTABLE=..\/bin\/as_lda$/;"	m
+Estimate	lda.cpp	/^bool LDA::Estimate()$/;"	f	class:LDA
+InfCalculateResultParas	lda.cpp	/^bool LDA::InfCalculateResultParas()$/;"	f	class:LDA
+InfSamplingMultinomial	lda.cpp	/^unsigned int LDA::InfSamplingMultinomial(unsigned int m, unsigned int n)$/;"	f	class:LDA
+Inference	lda.cpp	/^bool LDA::Inference(const std::string& pre_model)$/;"	f	class:LDA
+InitCorpus	lda.cpp	/^bool LDA::InitCorpus($/;"	f	class:LDA
+InitEstimate	lda.cpp	/^bool LDA::InitEstimate()$/;"	f	class:LDA
+InitInference	lda.cpp	/^bool LDA::InitInference()$/;"	f	class:LDA
+InplaceTrim	text_tools.cpp	/^void InplaceTrim(std::string& strValue)$/;"	f	namespace:TextTools
+InplaceTrimLeft	text_tools.cpp	/^void InplaceTrimLeft(std::string& strValue)$/;"	f	namespace:TextTools
+InplaceTrimRight	text_tools.cpp	/^void InplaceTrimRight(std::string& strValue)$/;"	f	namespace:TextTools
+LDA	lda.cpp	/^LDA::LDA()$/;"	f	class:LDA
+LDA	lda.h	/^class LDA$/;"	c
+LoadAssignment	lda.cpp	/^bool LDA::LoadAssignment($/;"	f	class:LDA
+OBJECTS	makefile	/^OBJECTS=$(SOURCES:.cpp=.o)$/;"	m
+OutputParas	lda.cpp	/^void LDA::OutputParas()$/;"	f	class:LDA
+ReadDocuments	ml_data.cpp	/^bool TextData::ReadDocuments(const std::string& input_file)$/;"	f	class:TextData
+ReadVocab	ml_data.cpp	/^bool TextData::ReadVocab(const std::string& input_file)$/;"	f	class:TextData
+SOURCES	makefile	/^SOURCES=text_tools.cpp ml_data.cpp lda.cpp main.cpp$/;"	m
+SamplingMultinomial	lda.cpp	/^unsigned int LDA::SamplingMultinomial(unsigned int m, unsigned int n)$/;"	f	class:LDA
+SetParameters	lda.cpp	/^void LDA::SetParameters($/;"	f	class:LDA
+Split	text_tools.cpp	/^void Split($/;"	f	namespace:TextTools
+T_MATRIX	lda.h	/^typedef std::vector< std::vector<unsigned int> > T_MATRIX;$/;"	t	class:LDA
+TextData	ml_data.h	/^    TextData(){}$/;"	f	class:TextData
+TextData	ml_data.h	/^class TextData$/;"	c
+TextTools	text_tools.cpp	/^namespace TextTools {$/;"	n	file:
+TextTools	text_tools.h	/^namespace TextTools {$/;"	n
+Usage	main.cpp	/^void Usage()$/;"	f
+__LDA_H__	lda.h	6;"	d
+__ML_DATA_H__	ml_data.h	6;"	d
+__TEXT_TOOLS_H__	text_tools.h	6;"	d
+m_NAll	lda.h	/^    std::vector< unsigned int > m_NAll; \/\/m_NAll[k] = total number of instances of all words that assigned to topic k$/;"	m	class:LDA
+m_Nd	lda.h	/^    T_MATRIX m_Nd; \/\/m_Nd[m][k] = total number of words in m that assigned to k$/;"	m	class:LDA
+m_Nw	lda.h	/^    T_MATRIX m_Nw;  \/\/m_Nw[i][k] = total number of instances of word i that assigned to topic k$/;"	m	class:LDA
+m_alpha	lda.h	/^    double m_alpha;$/;"	m	class:LDA
+m_beta	lda.h	/^    double m_beta;$/;"	m	class:LDA
+m_corpus	lda.h	/^    TextData m_corpus;$/;"	m	class:LDA
+m_docs	ml_data.h	/^    std::vector< std::vector<unsigned int> > m_docs;$/;"	m	class:TextData
+m_inf_NAll	lda.h	/^   std::vector< unsigned int > m_inf_NAll;$/;"	m	class:LDA
+m_inf_Nd	lda.h	/^   T_MATRIX m_inf_Nd;$/;"	m	class:LDA
+m_inf_Nw	lda.h	/^   T_MATRIX m_inf_Nw;$/;"	m	class:LDA
+m_inf_word_count	lda.h	/^   unsigned int m_inf_word_count;$/;"	m	class:LDA
+m_inf_z	lda.h	/^   T_MATRIX m_inf_z;$/;"	m	class:LDA
+m_is_estimate	lda.h	/^   bool m_is_estimate;$/;"	m	class:LDA
+m_max_iter	lda.h	/^    unsigned int m_max_iter; \/\/ max gibbs sampling iteration$/;"	m	class:LDA
+m_model_dir	lda.h	/^   std::string m_model_dir;$/;"	m	class:LDA
+m_prob	lda.h	/^    std::vector<double> m_prob; \/\/temp prob for sampling$/;"	m	class:LDA
+m_topic_num	lda.h	/^    unsigned int m_topic_num; \/\/ topic num$/;"	m	class:LDA
+m_vocab	ml_data.h	/^    std::map< unsigned int, std::string > m_vocab;$/;"	m	class:TextData
+m_word_count	lda.h	/^    unsigned int m_word_count; \/\/number of words in the corpus$/;"	m	class:LDA
+m_z	lda.h	/^    T_MATRIX m_z; \/\/m_z[m][n] = the assignment of n'th word in document m$/;"	m	class:LDA
+main	main.cpp	/^int main(int argc, char* argv[])$/;"	f
+~LDA	lda.h	/^    ~LDA(){}$/;"	f	class:LDA
+~TextData	ml_data.h	/^    ~TextData(){}$/;"	f	class:TextData
